@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kwote</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231d4d3a'/%3E%3Cpath d='M9 9h14v14H9z' fill='%23d8f5a2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <a class="logo" href="/app#/"><span class="logo-mark"></span>Kwote</a>
+    <div class="biz" id="biz-name"></div>
+    <nav>
+      <a href="#/" data-nav="quotes"><svg viewBox="0 0 20 20"><path d="M5 3h7l4 4v10H5z M12 3v4h4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Quotes</a>
+      <a href="#/connect" data-nav="connect"><svg viewBox="0 0 20 20"><path d="M8 12l4-4M7 9l-2 2a3 3 0 004 4l2-2M13 11l2-2a3 3 0 00-4-4L9 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Connect Claude</a>
+      <a href="#/settings" data-nav="settings"><svg viewBox="0 0 20 20"><path d="M4 16V8l6-4 6 4v8H4z M8 16v-4h4v4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Business &amp; rates</a>
+    </nav>
+    <div class="side-foot">
+      <div class="small muted" id="me-email"></div>
+      <form method="post" action="/logout"><button class="btn ghost sm" type="submit">Log out</button></form>
+    </div>
+  </aside>
+  <main class="main" id="view"><div class="loading">Loading…</div></main>
+</div>
+<div class="toast" id="toast"></div>
+<script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "kwote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "PGLITE_DIR=./pgdata node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "express": "^5.3.0",
+    "pg": "^8.23.1",
+    "zod": "^4.6.7",
+    "@electric-sql/pglite": "^0.5.16"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
